@@ -1,0 +1,27 @@
+﻿@page
+@model CRUD_project.Pages.UsersModel
+@{
+}
+<div class="row">
+ <h1 class="display-2">users</h1>
+ <table class="table">
+ <thead class="thead-inverse">
+ </thead>
+ <tbody>
+ @if (Model.users is not null)
+ {
+@* @foreach(var name in Model.users.ToList())
+ {
+ <tr><td>@name</td></tr>
+ }*@
+
+@for(int i = 0; i < Model.users.ToList().Count; i++)
+{
+ <tr><td>@i @Model.users[i].FirstName @Model.users[i].LastName @Model.users[i].Username</td></tr>
+ 
+}
+
+ }
+ </tbody>
+ </table>
+</div>

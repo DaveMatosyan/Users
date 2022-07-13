@@ -1,0 +1,19 @@
+﻿@page
+@model CRUD_project.Pages.SignInModel
+@{
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<div class="row">
+ <p>Sign In</p>
+ <form method="POST">
+ <div><input asp-for="User.Username"
+ placeholder="Username" /></div>
+ <div><input asp-for="User.Password"
+ placeholder="Password" /></div>
+ <input type="submit" />
+ </form>
+</div>
+
+
