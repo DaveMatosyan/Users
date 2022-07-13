@@ -1,0 +1,19 @@
+﻿@page
+@model CRUD_project.Pages.SignUpModel
+@{
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="row">
+ <p>Enter details for a new supplier:</p>
+ <form method="POST">
+ <div><input asp-for="User.Username"
+ placeholder="Username" /></div>
+ <div><input asp-for="User.Password"
+ placeholder="Password" /></div>
+ <div><input asp-for="User.FirstName"
+ placeholder="FirstName" /></div>
+  <div><input asp-for="User.LastName"
+ placeholder="LastName" /></div>
+ <input type="submit" />
+ </form>
+</div>
